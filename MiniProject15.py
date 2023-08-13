@@ -24,9 +24,8 @@ for filename in os.listdir(folder_path):
         cv2.imshow("Grayscale Image", img_gray)
         count+=1 
         print("Count: ",count)
-
-
-        
+        if count==100:
+            break
         # Wait for a key press to move to the next image
         cv2.waitKey(0)
 
